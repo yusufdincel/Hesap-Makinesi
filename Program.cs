@@ -10,6 +10,15 @@ namespace Hesap_Makinesi
     {
         static void Main(string[] args)
         {
+            float x, y;
+            Console.WriteLine("İlk sayıyı giriniz: ");
+            x = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("İkinci sayıyı giriniz: ");
+            y = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("TOPLAM: " + (x+y));
+
+
+
         }
     }
 }
