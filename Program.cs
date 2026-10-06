@@ -12,7 +12,7 @@ namespace Hesap_Makinesi
         {
             int sayi1, sayi2;
             string islem;
-            int toplam, fark, carpim, bölüm;
+            int toplam, fark, carpim, bolum;
             Console.WriteLine("İlk sayıyı giriniz: ");
             sayi1 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("İkinci sayıyı giriniz: ");
@@ -35,6 +35,16 @@ namespace Hesap_Makinesi
 
                     fark = sayi1 - sayi2;
                     Console.WriteLine("Fark: " + fark);
+                }
+                else if(islem == "çarpma")
+                {
+                    carpim = sayi1 * sayi2;
+                    Console.WriteLine("Çarpım: " + carpim);
+                }
+                else
+                {
+                    bolum = sayi1 / sayi2;
+                    Console.WriteLine("Bölüm: " + bolum);
                 }
 
             }
