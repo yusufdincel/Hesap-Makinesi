@@ -10,12 +10,20 @@ namespace Hesap_Makinesi
     {
         static void Main(string[] args)
         {
-            float x, y;
+            float sayi1, sayi2;
+            string islem;
             Console.WriteLine("İlk sayıyı giriniz: ");
-            x = Convert.ToInt32(Console.ReadLine());
+            sayi1 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("İkinci sayıyı giriniz: ");
-            y = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("TOPLAM: " + (x+y));
+            sayi2 = Convert.ToInt32(Console.ReadLine());
+            
+            Console.WriteLine("Yapmak İstediğiniz İşelmi seçiniz: (toplama, çıkarma, çarpma, bölme");
+            islem = Console.ReadLine();
+            if(islem != "toplama" && islem != "çıkarma" && islem != "çarpma" && islem != "bölme")
+            {
+                Console.WriteLine("Lütfen Geçerli Bir İşlem Giriniz...");
+            }
+
 
 
 
