@@ -10,8 +10,9 @@ namespace Hesap_Makinesi
     {
         static void Main(string[] args)
         {
-            float sayi1, sayi2;
+            int sayi1, sayi2;
             string islem;
+            int toplam, fark, carpim, bölüm;
             Console.WriteLine("İlk sayıyı giriniz: ");
             sayi1 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("İkinci sayıyı giriniz: ");
@@ -23,7 +24,20 @@ namespace Hesap_Makinesi
             {
                 Console.WriteLine("Lütfen Geçerli Bir İşlem Giriniz...");
             }
+            else
+            {
+                if (islem == "toplama")
+                {
+                    toplam = sayi1 + sayi2;
+                    Console.WriteLine("Toplam: " + toplam);             
+                }
+                else if(islem == "çıkarma"){
 
+                    fark = sayi1 - sayi2;
+                    Console.WriteLine("Fark: " + fark);
+                }
+
+            }
 
 
 
