@@ -20,10 +20,14 @@ namespace Hesap_Makinesi
             sayi2 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine();
             
-            Console.WriteLine("Yapmak İstediğiniz İşelmi seçiniz: (toplama, çıkarma, çarpma, bölme");
+            Console.WriteLine("Yapmak İstediğiniz İşelmi seçiniz: (toplama, çıkarma, çarpma, bölme)");
             islem = Console.ReadLine();
-            
-            if(islem != "toplama" && islem != "çıkarma" && islem != "çarpma" && islem != "bölme")
+            if (islem == "bölme" && sayi2 == 0)
+            {
+                Console.WriteLine("Herhangi bir sayı 0'a bölünemez...");
+                Environment.Exit(0);
+            }
+            if (islem != "toplama" && islem != "çıkarma" && islem != "çarpma" && islem != "bölme")
             {
                 Console.WriteLine("Lütfen Geçerli Bir İşlem Giriniz...");
             }
