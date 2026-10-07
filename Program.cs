@@ -13,17 +13,21 @@ namespace Hesap_Makinesi
             int sayi1, sayi2;
             string islem;
             int toplam, fark, carpim, bolum;
-            Console.WriteLine("İlk sayıyı giriniz: ");
+            Console.Write("İlk sayıyı giriniz: ");
             sayi1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("İkinci sayıyı giriniz: ");
+            Console.WriteLine();
+            Console.Write("İkinci sayıyı giriniz: ");
             sayi2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine();
             
             Console.WriteLine("Yapmak İstediğiniz İşelmi seçiniz: (toplama, çıkarma, çarpma, bölme");
             islem = Console.ReadLine();
+            
             if(islem != "toplama" && islem != "çıkarma" && islem != "çarpma" && islem != "bölme")
             {
                 Console.WriteLine("Lütfen Geçerli Bir İşlem Giriniz...");
             }
+      
             else
             {
                 if (islem == "toplama")
