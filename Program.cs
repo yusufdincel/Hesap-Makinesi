@@ -24,8 +24,12 @@ namespace Hesap_Makinesi
             islem = Console.ReadLine();
             if (islem == "bölme" && sayi2 == 0)
             {
-                Console.WriteLine("Herhangi bir sayı 0'a bölünemez...");
-                Environment.Exit(0);
+                
+                while(sayi2 == 0)
+                {
+                    Console.WriteLine("Herhangi bir sayı 0'a bölünemez. Lütfen ikinci sayıyı tekrar giriniz: ");
+                    sayi2 = Convert.ToInt32(Console.ReadLine());
+                }
             }
             if (islem != "toplama" && islem != "çıkarma" && islem != "çarpma" && islem != "bölme")
             {
