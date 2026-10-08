@@ -22,10 +22,10 @@ namespace Hesap_Makinesi
             Console.WriteLine();
             
             Console.WriteLine("Yapmak İstediğiniz İşelmi seçiniz: (numarasını yazınız)");
-            Console.WriteLine("1) Toplama");
-            Console.WriteLine("2) Çıkarma");
-            Console.WriteLine("3) Çarpma");
-            Console.WriteLine("4) Bölme");
+            Console.WriteLine("Toplama (1)");
+            Console.WriteLine("Çıkarma (2)");
+            Console.WriteLine("Çarpma (3)");
+            Console.WriteLine("Bölme (4)");
             islem = Console.ReadLine();
             if (islem == "4" && sayi2 == 0)
             {
