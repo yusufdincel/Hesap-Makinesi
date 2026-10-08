@@ -11,23 +11,21 @@ namespace Hesap_Makinesi
         static void Main(string[] args)
         {
             int sayi1, sayi2;
-            string x, y;
             string islem;
             int toplam, fark, carpim, bolum;
-            Console.Write("İlk sayıyı giriniz: ");
-            sayi1 = Convert.ToInt32(Console.ReadLine());            
+
+            Console.Write("İlk sayıyı giriniz: ");       
+            sayi1 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine();
             Console.Write("İkinci sayıyı giriniz: ");
             sayi2 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine();
-            
-            Console.WriteLine("Yapmak İstediğiniz İşelmi seçiniz: (numarasını yazınız)");
-            Console.WriteLine("Toplama (1)");
-            Console.WriteLine("Çıkarma (2)");
-            Console.WriteLine("Çarpma (3)");
-            Console.WriteLine("Bölme (4)");
+
+            Console.WriteLine("(+) (-) (*) (/)");
+            Console.Write("Yapmak İstediğiniz İşelmi seçiniz: ");
             islem = Console.ReadLine();
-            if (islem == "4" && sayi2 == 0)
+
+            if (islem == "/" && sayi2 == 0)
             {
                 while(sayi2 == 0)
                 {
@@ -35,24 +33,25 @@ namespace Hesap_Makinesi
                     sayi2 = Convert.ToInt32(Console.ReadLine());
                 }
             }
-            if (islem != "1" && islem != "2" && islem != "3" && islem != "4")
+
+            if (islem != "+" && islem != "-" && islem != "*" && islem != "/")
             {
                 Console.WriteLine("Lütfen Geçerli Bir İşlem Giriniz...");
             }
       
             else
             {
-                if (islem == "1")
+                if (islem == "+")
                 {
                     toplam = sayi1 + sayi2;
                     Console.WriteLine("Toplam: " + toplam);             
                 }
-                else if(islem == "2"){
+                else if(islem == "-"){
 
                     fark = sayi1 - sayi2;
                     Console.WriteLine("Fark: " + fark);
                 }
-                else if(islem == "3")
+                else if(islem == "*")
                 {
                     carpim = sayi1 * sayi2;
                     Console.WriteLine("Çarpım: " + carpim);
