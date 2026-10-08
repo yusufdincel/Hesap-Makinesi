@@ -25,6 +25,9 @@ namespace Hesap_Makinesi
             Console.Write("Yapmak İstediğiniz İşelmi seçiniz: ");
             islem = Console.ReadLine();
 
+            Console.WriteLine();
+            Console.WriteLine("----------------");
+
             if (islem == "/" && sayi2 == 0)
             {
                 while(sayi2 == 0)
@@ -38,32 +41,34 @@ namespace Hesap_Makinesi
             {
                 Console.WriteLine("Lütfen Geçerli Bir İşlem Giriniz...");
             }
-      
+
+
             else
             {
                 if (islem == "+")
                 {
                     toplam = sayi1 + sayi2;
-                    Console.WriteLine("Toplam: " + toplam);             
+                    Console.WriteLine(sayi1 + islem + sayi2 + " = " + toplam);             
                 }
                 else if(islem == "-"){
 
                     fark = sayi1 - sayi2;
-                    Console.WriteLine("Fark: " + fark);
+                    Console.WriteLine(sayi1 + islem + sayi2 + " = " + fark);
                 }
                 else if(islem == "*")
                 {
                     carpim = sayi1 * sayi2;
-                    Console.WriteLine("Çarpım: " + carpim);
+                    Console.WriteLine(sayi1 + islem + sayi2 + " = " + carpim);
                 }
                 else
                 {
                     bolum = sayi1 / sayi2;
-                    Console.WriteLine("Bölüm: " + bolum);
+                    Console.WriteLine(sayi1 + islem + sayi2 + " = " + bolum);
                 }
 
             }
 
+            Console.WriteLine("----------------");
 
 
         }
