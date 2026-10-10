@@ -19,7 +19,7 @@ namespace Hesap_Makinesi
             Console.Write("İlk sayıyı giriniz: ");       
             sayi1 = Single.Parse(Console.ReadLine());
             Console.WriteLine();
-            Console.Write("İkinci sayıyı giriniz: ");
+
 
             Console.WriteLine("(+) (-) (*) (/) (sqrt)");
             Console.Write("Yapmak İstediğiniz İşelmi seçiniz: ");
@@ -39,7 +39,7 @@ namespace Hesap_Makinesi
                 System.Environment.Exit(1);
                   
             }
-
+            Console.Write("İkinci sayıyı giriniz: ");
             sayi2 = Single.Parse(Console.ReadLine());
             Console.WriteLine();
 
