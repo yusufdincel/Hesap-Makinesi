@@ -10,15 +10,15 @@ namespace Hesap_Makinesi
     {
         static void Main(string[] args)
         {
-            int sayi1, sayi2;
+            float sayi1, sayi2;
             string islem;
-            int toplam, fark, carpim, bolum;
+            float toplam, fark, carpim, bolum;
 
             Console.Write("İlk sayıyı giriniz: ");       
-            sayi1 = Convert.ToInt32(Console.ReadLine());
+            sayi1 = Single.Parse(Console.ReadLine());
             Console.WriteLine();
             Console.Write("İkinci sayıyı giriniz: ");
-            sayi2 = Convert.ToInt32(Console.ReadLine());
+            sayi2 = Single.Parse(Console.ReadLine());
             Console.WriteLine();
 
             Console.WriteLine("(+) (-) (*) (/)");
