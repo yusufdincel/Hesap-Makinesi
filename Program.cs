@@ -19,12 +19,28 @@ namespace Hesap_Makinesi
             sayi1 = Single.Parse(Console.ReadLine());
             Console.WriteLine();
             Console.Write("İkinci sayıyı giriniz: ");
-            sayi2 = Single.Parse(Console.ReadLine());
-            Console.WriteLine();
 
             Console.WriteLine("(+) (-) (*) (/) (sqrt)");
             Console.Write("Yapmak İstediğiniz İşelmi seçiniz: ");
             islem = Console.ReadLine();
+
+            if(islem == "sqrt")
+            {
+                if(sayi1 < 0)
+                {
+                    Console.WriteLine(sayi1 + " sayısının karekökü alınamaz...");
+                }
+                else
+                {
+                    kok = Math.Sqrt(sayi1);
+                    Console.WriteLine("karekök " + sayi1 + " = " + kok);
+                }
+            }
+
+            sayi2 = Single.Parse(Console.ReadLine());
+            Console.WriteLine();
+
+
 
             Console.WriteLine();
             Console.WriteLine("----------------");
@@ -71,13 +87,6 @@ namespace Hesap_Makinesi
                     Console.WriteLine(sayi1 + islem + sayi2 + " = " + carpim);
                 }
 
-                else if(islem == "sqrt")
-                {
-
-                    kok = Math.Sqrt(sayi1);
-                    Console.WriteLine("karekök " + sayi1 + " = " + kok);
-
-                }
                 else
                 {
                     bolum = sayi1 / sayi2;
