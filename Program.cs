@@ -66,7 +66,7 @@ namespace Hesap_Makinesi
            
 
 
-            if (islem != "+" && islem != "-" && islem != "*" && islem != "/" && islem != "sqrt" && islem != "kalan")
+            if (islem != "+" && islem != "-" && islem != "*" && islem != "/" && islem != "sqrt" && islem != "%")
             {
                 Console.WriteLine("Lütfen Geçerli Bir İşlem Giriniz...");
             }
