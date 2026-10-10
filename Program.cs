@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -35,6 +36,8 @@ namespace Hesap_Makinesi
                     kok = Math.Sqrt(sayi1);
                     Console.WriteLine("karekök " + sayi1 + " = " + kok);
                 }
+                System.Environment.Exit(1);
+                  
             }
 
             sayi2 = Single.Parse(Console.ReadLine());
