@@ -28,6 +28,7 @@ namespace Hesap_Makinesi
             Console.WriteLine();
             Console.WriteLine("----------------");
 
+
             if (islem == "/" && sayi2 == 0)
             {
                 while(sayi2 == 0)
@@ -37,11 +38,19 @@ namespace Hesap_Makinesi
                 }
             }
 
+            if((sayi1 % Convert.ToInt32(sayi1) == 0 && (sayi2 % Convert.ToInt32(sayi2)) == 0))
+            {
+                sayi1 = Convert.ToInt32(sayi1);
+                sayi2 = Convert.ToInt32(sayi2);
+            }
+           
+
+
             if (islem != "+" && islem != "-" && islem != "*" && islem != "/")
             {
                 Console.WriteLine("Lütfen Geçerli Bir İşlem Giriniz...");
             }
-
+            
 
             else
             {
