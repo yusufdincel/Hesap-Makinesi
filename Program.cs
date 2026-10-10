@@ -13,7 +13,7 @@ namespace Hesap_Makinesi
         {
             float sayi1, sayi2;
             string islem;
-            float toplam, fark, carpim, bolum;
+            float toplam, fark, carpim, bolum, kalan;
             double kok;
 
             Console.Write("İlk sayıyı giriniz: ");       
@@ -21,7 +21,7 @@ namespace Hesap_Makinesi
             Console.WriteLine();
 
 
-            Console.WriteLine("(+) (-) (*) (/) (sqrt)");
+            Console.WriteLine("(+) (-) (*) (/) (%) (sqrt) ");
             Console.Write("Yapmak İstediğiniz İşelmi seçiniz: ");
             islem = Console.ReadLine();
 
@@ -66,7 +66,7 @@ namespace Hesap_Makinesi
            
 
 
-            if (islem != "+" && islem != "-" && islem != "*" && islem != "/" && islem != "sqrt")
+            if (islem != "+" && islem != "-" && islem != "*" && islem != "/" && islem != "sqrt" && islem != "kalan")
             {
                 Console.WriteLine("Lütfen Geçerli Bir İşlem Giriniz...");
             }
@@ -89,7 +89,12 @@ namespace Hesap_Makinesi
                     carpim = sayi1 * sayi2;
                     Console.WriteLine(sayi1 + islem + sayi2 + " = " + carpim);
                 }
+                else if(islem == "%")
+                {
 
+                    kalan = sayi1 % sayi2;
+                    Console.WriteLine(sayi1 + islem + sayi2 + " = " + kalan);
+                }
                 else
                 {
                     bolum = sayi1 / sayi2;
